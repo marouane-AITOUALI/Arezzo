@@ -9,6 +9,7 @@ public class ToucheDoControleur {
     public void handle(){
         try {
             Synthesizer synthesizer = MidiSystem.getSynthesizer();
+
             //System.out.printf("ggg");
 
         } catch (MidiUnavailableException e) {
