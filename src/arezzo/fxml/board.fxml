@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,8 +13,8 @@
    <children>
       <GridPane prefHeight="400.0" prefWidth="600.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="46.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="354.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
@@ -30,17 +31,30 @@
             <RadioButton mnemonicParsing="false" text="grave" GridPane.rowIndex="2" />
             <RadioButton mnemonicParsing="false" text="medium" GridPane.rowIndex="1" />
             <RadioButton mnemonicParsing="false" GridPane.rowIndex="4" />
-            <RadioButton mnemonicParsing="false" text="RadioButton" GridPane.rowIndex="5" />
-            <RadioButton mnemonicParsing="false" text="RadioButton" GridPane.rowIndex="6" />
-            <RadioButton mnemonicParsing="false" GridPane.rowIndex="3">
-               <graphic>
-                  <ImageView fitHeight="67.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../ressources/ronde.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </RadioButton>
+            <RadioButton mnemonicParsing="false" GridPane.rowIndex="5" />
+            <RadioButton mnemonicParsing="false" GridPane.rowIndex="6" />
+            <RadioButton mnemonicParsing="false" GridPane.rowIndex="3" />
+            <ImageView fitHeight="43.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../ressources/blanche.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../ressources/ronde.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../ressources/noire.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../ressources/croche.png" />
+               </image>
+            </ImageView>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>
