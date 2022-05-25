@@ -37,6 +37,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <Button mnemonicParsing="false" onMousePressed="#keyDo" prefHeight="400.0" prefWidth="85.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Do" GridPane.columnSpan="3" GridPane.rowSpan="3" />
@@ -46,12 +47,13 @@
             <Button mnemonicParsing="false" onMousePressed="#keySol" prefHeight="400.0" prefWidth="100.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Sol" GridPane.columnIndex="12" GridPane.columnSpan="3" GridPane.rowSpan="3" />
             <Button mnemonicParsing="false" onMousePressed="#keyLa" prefHeight="400.0" prefWidth="114.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="La" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowSpan="3" />
             <Button mnemonicParsing="false" onMousePressed="#keySi" prefHeight="521.0" prefWidth="87.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Si" GridPane.columnIndex="18" GridPane.columnSpan="3" GridPane.rowSpan="3" />
-            <Button mnemonicParsing="false" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="1" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowSpan="2" />
-            <Button mnemonicParsing="false" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="2" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowSpan="2" />
-            <Button mnemonicParsing="false" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="3" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.rowSpan="2" />
-            <Button mnemonicParsing="false" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="5" GridPane.columnIndex="17" GridPane.columnSpan="2" GridPane.rowSpan="2" />
-            <Button mnemonicParsing="false" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="4" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button mnemonicParsing="false" onAction="#doDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="1" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button mnemonicParsing="false" onAction="#reDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="2" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button mnemonicParsing="false" onAction="#faDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="3" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button mnemonicParsing="false" onAction="#laDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="5" GridPane.columnIndex="17" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button mnemonicParsing="false" onAction="#solDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="4" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowSpan="2" />
             <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="600.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Chuuut" GridPane.columnSpan="21" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onMousePressed="#jouerMelodie" prefHeight="39.0" prefWidth="600.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Play Partition" GridPane.columnSpan="21" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </children>

@@ -5,10 +5,12 @@ import partition.Partition;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.Synthesizer;
+import java.util.ArrayList;
 
 public class ControllerPiano {
 
     private Synthesizer synthesizer;
+    private ArrayList<String> melodie = new ArrayList<>();
 
     {
         try {
@@ -26,6 +28,7 @@ public class ControllerPiano {
         Partition p = new Partition(synthesizer);
         p.play("C");
         p.setVolume(100);
+        melodie.add("C");
 
     }
 
@@ -33,14 +36,14 @@ public class ControllerPiano {
         Partition p = new Partition(synthesizer);
         p.play("D");
         p.setVolume(100);
-
+        melodie.add("D");
     }
 
     public void keyMi(){
         Partition p = new Partition(synthesizer);
         p.play("E");
         p.setVolume(100);
-
+        melodie.add("E");
     }
 
     public void keyFa(){
@@ -48,7 +51,7 @@ public class ControllerPiano {
         Partition p = new Partition(synthesizer);
         p.play("F");
         p.setVolume(100);
-
+        melodie.add("F");
     }
 
     public void keySol(){
@@ -56,7 +59,7 @@ public class ControllerPiano {
         Partition p = new Partition(synthesizer);
         p.play("G");
         p.setVolume(100);
-
+        melodie.add("G");
     }
 
     public void keyLa(){
@@ -64,7 +67,7 @@ public class ControllerPiano {
         Partition p = new Partition(synthesizer);
         p.play("A");
         p.setVolume(100);
-
+        melodie.add("A");
     }
 
     public void keySi(){
@@ -72,6 +75,53 @@ public class ControllerPiano {
         Partition p = new Partition(synthesizer);
         p.play("B");
         p.setVolume(100);
+        melodie.add("B");
+    }
 
+    public void jouerMelodie(){
+        StringBuffer s = new StringBuffer();
+        for(int i =0; i < melodie.size();i++){
+            s.append(melodie.get(i));
+        }
+        melodie.clear();
+        Partition p = new Partition(synthesizer);
+        p.setVolume(100);
+        p.play(s.toString());
+
+    }
+
+    public void doDiaz(){
+        Partition p = new Partition(synthesizer);
+        p.play("^C");
+        p.setVolume(100);
+        melodie.add("^C");
+    }
+
+    public void reDiaz(){
+        Partition p = new Partition(synthesizer);
+        p.play("^D");
+        p.setVolume(100);
+        melodie.add("^D");
+    }
+
+    public void faDiaz(){
+        Partition p = new Partition(synthesizer);
+        p.play("^F");
+        p.setVolume(100);
+        melodie.add("^F");
+    }
+
+    public void solDiaz(){
+        Partition p = new Partition(synthesizer);
+        p.play("^G");
+        p.setVolume(100);
+        melodie.add("^G");
+    }
+
+    public void laDiaz(){
+        Partition p = new Partition(synthesizer);
+        p.play("^A");
+        p.setVolume(100);
+        melodie.add("^A");
     }
 }
