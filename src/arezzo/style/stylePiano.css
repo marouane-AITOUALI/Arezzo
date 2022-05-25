@@ -1,0 +1,14 @@
+.black{
+    -fx-background-color: black;
+    -fx-border-style: solid;
+    -fx-border-color: brown;
+    -fx-border-width: 0px 2px 1px 2px;
+}
+
+.white{
+    -fx-background-color: white;
+    -fx-border-style: solid;
+    -fx-border-color: grey;
+    -fx-border-width: 0px 4px 2px 0px;
+
+}
