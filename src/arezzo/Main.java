@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("vues/ToucheDo.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("piano.fxml"));
         primaryStage.setTitle("Arezzo");
-        primaryStage.setScene(new Scene(root, 500, 500));
+        primaryStage.setScene(new Scene(root, 1000, 700));
         primaryStage.show();
     }
 
