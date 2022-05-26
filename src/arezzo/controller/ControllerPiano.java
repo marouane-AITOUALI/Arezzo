@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class ControllerPiano {
 
     private Synthesizer synthesizer;
+    private ControllerBoard controlBoard = new ControllerBoard();
     private ArrayList<String> melodie = new ArrayList<>();
 
     {
@@ -29,6 +30,7 @@ public class ControllerPiano {
         p.play("C");
         p.setVolume(100);
         melodie.add("C");
+        controlBoard.add("C");
 
     }
 
@@ -37,6 +39,7 @@ public class ControllerPiano {
         p.play("D");
         p.setVolume(100);
         melodie.add("D");
+        controlBoard.add("D");
     }
 
     public void keyMi(){
@@ -44,6 +47,7 @@ public class ControllerPiano {
         p.play("E");
         p.setVolume(100);
         melodie.add("E");
+        controlBoard.add("E");
     }
 
     public void keyFa(){
@@ -52,6 +56,7 @@ public class ControllerPiano {
         p.play("F");
         p.setVolume(100);
         melodie.add("F");
+        controlBoard.add("F");
     }
 
     public void keySol(){
@@ -60,6 +65,7 @@ public class ControllerPiano {
         p.play("G");
         p.setVolume(100);
         melodie.add("G");
+        controlBoard.add("G");
     }
 
     public void keyLa(){
@@ -68,6 +74,7 @@ public class ControllerPiano {
         p.play("A");
         p.setVolume(100);
         melodie.add("A");
+        controlBoard.add("A");
     }
 
     public void keySi(){
@@ -76,6 +83,7 @@ public class ControllerPiano {
         p.play("B");
         p.setVolume(100);
         melodie.add("B");
+        controlBoard.add("B");
     }
 
     public void jouerMelodie(){
@@ -95,6 +103,7 @@ public class ControllerPiano {
         p.play("^C");
         p.setVolume(100);
         melodie.add("^C");
+        controlBoard.add("^C");
     }
 
     public void reDiaz(){
@@ -102,6 +111,7 @@ public class ControllerPiano {
         p.play("^D");
         p.setVolume(100);
         melodie.add("^D");
+        controlBoard.add("^D");
     }
 
     public void faDiaz(){
@@ -109,6 +119,7 @@ public class ControllerPiano {
         p.play("^F");
         p.setVolume(100);
         melodie.add("^F");
+        controlBoard.add("^F");
     }
 
     public void solDiaz(){
@@ -116,6 +127,7 @@ public class ControllerPiano {
         p.play("^G");
         p.setVolume(100);
         melodie.add("^G");
+        controlBoard.add("^G");
     }
 
     public void laDiaz(){
@@ -123,5 +135,6 @@ public class ControllerPiano {
         p.play("^A");
         p.setVolume(100);
         melodie.add("^A");
+        controlBoard.add("^A");
     }
 }
