@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class ControllerBoard {
 
+    private ControllerPiano cp;
     private ArrayList<String> arr = new ArrayList<>();
     public void add(String c) {
         arr.add(c);
