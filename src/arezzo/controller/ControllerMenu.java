@@ -1,5 +1,6 @@
 package arezzo.controller;
 
+import arezzo.model.Notes;
 import javafx.application.Platform;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -10,7 +11,7 @@ import java.io.ObjectOutputStream;
 
 public class ControllerMenu {
 
-
+    private Notes notes = new Notes();
 
     public void exit(){
         Platform.exit();
@@ -28,7 +29,7 @@ public class ControllerMenu {
             try {
                 FileOutputStream fos = new FileOutputStream(file.getPath());
                 ObjectOutputStream oos = new ObjectOutputStream(fos);
-                oos.writeObject(model.getMelodie());
+                oos.writeObject(notes.getNotes());
                 oos.close();
             }catch (Exception e){
                 e.printStackTrace();
