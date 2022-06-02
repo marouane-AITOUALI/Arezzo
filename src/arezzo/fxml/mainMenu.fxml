@@ -8,10 +8,10 @@
     <menus>
         <Menu fx:id="menuMelodie" mnemonicParsing="false" text="Melodie">
             <items>
-                <MenuItem fx:id="nouveau" mnemonicParsing="false" onAction="#nouveau" text="Nouveau" />
-                <MenuItem fx:id="open" mnemonicParsing="false" onAction="#ouvrir" text="Ouvrir" />
-                <MenuItem fx:id="save" mnemonicParsing="false" onAction="#enregistrer" text="Enregistrer Sous..." />
-                <MenuItem fx:id="quitter" mnemonicParsing="false" onAction="#exit" text="Quitter" />
+                <MenuItem fx:id="nouveau" mnemonicParsing="false"  text="Nouveau" />
+                <MenuItem fx:id="open" mnemonicParsing="false"  text="Ouvrir" />
+                <MenuItem fx:id="save" mnemonicParsing="false"  text="Enregistrer Sous..." />
+                <MenuItem fx:id="quitter" mnemonicParsing="false"  text="Quitter" />
             </items>
         </Menu>
         <Menu fx:id="menuOutils" mnemonicParsing="false" text="Outils">

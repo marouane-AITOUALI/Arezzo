@@ -24,6 +24,20 @@ public class ControllerMenu implements Initializable {
     private MenuItem nouveau, open, save, quitter,
             renommer, transposer;
 
+    public void ControllerMenu(){
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        open.setOnAction(e -> this.ouvrir());
+        save.setOnAction(e -> enregistrer());
+        quitter.setOnAction(e -> exit());
+        nouveau.setOnAction(e -> nouveau());
+        renommer.setOnAction(e -> changerNom());
+        transposer.setOnAction(e -> transposer());
+    }
+
     private Notes notes = new Notes();
 
     public void exit(){
@@ -36,7 +50,7 @@ public class ControllerMenu implements Initializable {
     {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Enregistrer une parition :");
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("*.arezzo");
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Arezzo files (*.arezzo)","*.arezzo");
         fileChooser.getExtensionFilters().add(extFilter);
         File file = fileChooser.showSaveDialog(new Stage());
         if (file != null) {
@@ -50,7 +64,7 @@ public class ControllerMenu implements Initializable {
             }
         }
     }
-
+    @FXML
     public void nouveau(){
         notes.reset();
     }
@@ -61,7 +75,8 @@ public class ControllerMenu implements Initializable {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open file: ");
         fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("*.arezzo");
+        FileChooser.ExtensionFilter extFilter =
+                new FileChooser.ExtensionFilter("Arezzo files (*.arezzo)", "*.arezzo");
         fileChooser.getExtensionFilters().add(extFilter);
         File file = fileChooser.showOpenDialog(new Stage());
         if (file != null) {
@@ -90,17 +105,7 @@ public class ControllerMenu implements Initializable {
         }
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        open.setOnAction(e -> ouvrir());
-        save.setOnAction(e -> enregistrer());
-        quitter.setOnAction(e -> exit());
-        nouveau.setOnAction(e -> nouveau());
-        renommer.setOnAction(e -> changerNom());
-        transposer.setOnAction(e -> transposer());
-        open.setOnAction(e -> ouvrir());
 
-    }
 
     private void transposer() {
         notes.transposer();
