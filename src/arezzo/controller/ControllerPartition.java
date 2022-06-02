@@ -1,5 +1,6 @@
 package arezzo.controller;
 
+import arezzo.model.Notes;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,6 +14,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ControllerPartition implements Initializable {
+
+    private Notes notes = new Notes();
     private Button b = new Button();
     private Button b1 = new Button();
     private Button b2 = new Button();
