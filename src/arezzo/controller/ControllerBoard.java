@@ -1,5 +1,6 @@
 package arezzo.controller;
 
+import arezzo.model.Notes;
 import javafx.fxml.FXML;
 import javafx.scene.control.Slider;
 import partition.Partition;
@@ -11,8 +12,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ControllerBoard {
+    private Notes notes = new Notes();
     private Synthesizer synthesizer;
     private Partition p ;
+
+
     @FXML
     Slider volume;
 

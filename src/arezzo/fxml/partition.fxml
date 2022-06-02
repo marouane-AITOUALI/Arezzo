@@ -16,8 +16,17 @@
                 </Label>
                 <HBox prefHeight="251.0" prefWidth="983.0">
                     <children>
-                        <ScrollPane fx:id="P_MelodiePane" fitToHeight="true" prefHeight="157.0" prefWidth="808.0" />
-                        <Button fx:id="B_LesNotes" contentDisplay="TOP" mnemonicParsing="false" prefHeight="146.0" prefWidth="119.0">
+                        <ScrollPane fx:id="melodie" fitToHeight="true" prefHeight="157.0" prefWidth="808.0" />
+                        <Button fx:id="notes" contentDisplay="TOP" mnemonicParsing="false" prefHeight="146.0" prefWidth="119.0">
+                            <graphic>
+                                <ImageView fitHeight="121.0" fitWidth="97.0">
+                                    <image>
+                                        <Image url="@../ressources/vuePartition.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="nodtes" contentDisplay="TOP" mnemonicParsing="false" prefHeight="146.0" prefWidth="119.0">
                             <graphic>
                                 <ImageView fitHeight="121.0" fitWidth="97.0">
                                     <image>

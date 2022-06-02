@@ -1,5 +1,6 @@
 package arezzo.controller;
 
+import arezzo.model.Notes;
 import partition.Partition;
 
 import javax.sound.midi.MidiSystem;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 public class ControllerPiano {
 
     private Synthesizer synthesizer;
-
+    private Notes notes = new Notes();
     private ArrayList<String> melodie = new ArrayList<>();
     private Partition p;
 
