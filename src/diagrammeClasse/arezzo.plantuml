@@ -1,0 +1,72 @@
+@startuml
+package arezzo{
+
+package model{
+
+class Notes{
+public void reset()
+public void setMelodie(String melodie)
+public String getNotes()
+public void add(String s)
+public void setTitle()
+
+}
+}
+
+package controller {
+
+class ControllerMenu implements Initializable{
+@FXML
+private Menu menuMelodie, menuOutils
+@FXML
+private MenuItem nouveau, open, save, quitter,
+    renommer, transposer
+public void initialize(URL url, ResourceBundle resourceBundle)
+public void exit()
+public void enregistrer()
+public void ouvrir()
+public void nouveau()
+public void changerNom()
+public void transposer()
+
+
+}
+
+class ControllerBoard{
+private Synthesizer synthesizer
+private Parition p
+@FXML
+Slider volume
+public void setVolume(double v)
+}
+
+class ControllerPartition implements Initializable {
+private Button b,b1,b2,b3,b4,b5;
+@FXML
+ListView<Button> l
+ObservableList list
+public void initialize(URL url, ResourceBundle resourceBundle)
+}
+
+class ControllerPiano{
+private Synthesizer synthesizer
+private ArrayList<String> melodie
+public void keyPiano()
+public void keyPianoDiaz()
+}
+
+}
+
+class Main extends Application{
+public void start(Stage primaryStage) throws Exception
+public void main(String [] args)
+}
+
+
+}
+
+ControllerMenu -- "1" Notes
+ControllerBoard -- "1" Notes
+ControllerPartition -- "1" Notes
+ControllerPiano -- "1" Notes
+@enduml
