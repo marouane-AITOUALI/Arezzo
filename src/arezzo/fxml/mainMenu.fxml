@@ -10,7 +10,7 @@
             <items>
                 <MenuItem fx:id="MI_Nouveau" mnemonicParsing="false" text="Nouveau" />
                 <MenuItem fx:id="MI_Ouvrir" mnemonicParsing="false" text="Ouvrir" />
-                <MenuItem fx:id="MI_Enregistrer" mnemonicParsing="false" text="Enregistrer Sous. .." />
+                <MenuItem fx:id="enregistrer" mnemonicParsing="false" onAction="#enregistrer" text="Enregistrer Sous. .." />
                 <MenuItem fx:id="MI_Quitter" mnemonicParsing="false" onAction="#exit" text="Quitter" />
             </items>
         </Menu>

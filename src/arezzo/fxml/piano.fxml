@@ -45,7 +45,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button id="C" mnemonicParsing="false" onMousePressed="#keyDo" prefHeight="400.0" prefWidth="85.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Do" GridPane.columnSpan="3" GridPane.rowSpan="3" />
+            <Button id="C" fx:id="keyDo" mnemonicParsing="false" prefHeight="400.0" prefWidth="85.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Do" GridPane.columnSpan="3" GridPane.rowSpan="3" />
             <Button id="C" mnemonicParsing="false" onMousePressed="#keyRe" prefHeight="400.0" prefWidth="92.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Ré" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowSpan="3" />
             <Button id="C" mnemonicParsing="false" onMousePressed="#keyMi" prefHeight="400.0" prefWidth="84.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Mi" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.rowSpan="3" />
             <Button id="C" mnemonicParsing="false" onMousePressed="#keyFa" prefHeight="400.0" prefWidth="88.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Fa" GridPane.columnIndex="9" GridPane.columnSpan="3" GridPane.rowSpan="3" />
@@ -55,8 +55,8 @@
             <Button id="C" mnemonicParsing="false" onMousePressed="#doDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="Do#" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowSpan="2" />
             <Button id="C" mnemonicParsing="false" onMousePressed="#reDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="Ré#" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowSpan="2" />
             <Button id="C" mnemonicParsing="false" onMousePressed="#faDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="Fa#" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.rowSpan="2" />
-            <Button id="C" mnemonicParsing="false" onMousePressed="#laDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="Sol#" GridPane.columnIndex="17" GridPane.columnSpan="2" GridPane.rowSpan="2" />
-            <Button id="C" mnemonicParsing="false" onMousePressed="#solDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="La#" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button id="C" mnemonicParsing="false" onMousePressed="#laDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="La#" GridPane.columnIndex="17" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <Button id="C" mnemonicParsing="false" onMousePressed="#solDiaz" prefHeight="211.0" prefWidth="62.0" styleClass="black" stylesheets="@../style/stylePiano.css" text="Sol#" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowSpan="2" />
             <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="600.0" styleClass="white" stylesheets="@../style/stylePiano.css" text="Chuuut" GridPane.columnSpan="21" GridPane.rowIndex="3" />
             <ImageView fitHeight="88.0" fitWidth="351.0" onMousePressed="#jouerMelodie" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                <image>

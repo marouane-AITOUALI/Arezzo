@@ -12,9 +12,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("fxml/board.fxml"));
-        Parent root2 = FXMLLoader.load(getClass().getResource("fxml/piano.fxml"));
-        Parent root3 = FXMLLoader.load(getClass().getResource("fxml/mainMenu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        Parent root = fxmlLoader.load(getClass().getResource("fxml/board.fxml"));
+        Parent root2 = fxmlLoader.load(getClass().getResource("fxml/piano.fxml"));
+        Parent root3 = fxmlLoader.load(getClass().getResource("fxml/mainMenu.fxml"));
         Parent root4 = FXMLLoader.load(getClass().getResource("fxml/partition.fxml"));
 
         BorderPane pere = new BorderPane();
